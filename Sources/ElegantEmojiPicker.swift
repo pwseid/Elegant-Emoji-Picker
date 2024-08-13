@@ -193,7 +193,7 @@ open class ElegantEmojiPicker: UIViewController {
     
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        collectionLayout.headerReferenceSize = CGSize(width: collectionView.frame.width, height: 50)
+        collectionLayout.headerReferenceSize = CGSize(width: collectionView.frame.width, height: 0)
         fadeContainer.layer.mask?.frame = fadeContainer.bounds
     }
     
