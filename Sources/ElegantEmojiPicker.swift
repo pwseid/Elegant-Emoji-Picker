@@ -31,6 +31,7 @@ open class ElegantEmojiPicker: UIViewController {
     let fadeContainer = UIView()
     let collectionLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 10
         layout.minimumInteritemSpacing = 10
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
