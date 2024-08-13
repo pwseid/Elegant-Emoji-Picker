@@ -166,7 +166,7 @@ open class ElegantEmojiPicker: UIViewController {
         collectionView.backgroundColor = .clear
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.contentInset.bottom = 50 + padding // Compensating for the toolbar
+        // collectionView.contentInset.bottom = 50 + padding // Compensating for the toolbar
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView!.register(EmojiCell.self, forCellWithReuseIdentifier: "EmojiCell")
         collectionView!.register(CollectionViewSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SectionHeader")
