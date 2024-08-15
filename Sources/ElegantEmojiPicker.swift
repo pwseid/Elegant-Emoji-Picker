@@ -260,7 +260,7 @@ extension ElegantEmojiPicker: UITextFieldDelegate {
         return true
     }
     
-    @objc func searchFieldChanged (_ textField: UITextField) {
+    @objc public func searchFieldChanged (_ textField: UITextField) {
         let count = textField.text!.count
         let searchTerm = textField.text!
         DispatchQueue.global(qos: .userInteractive).async { [weak self] in
